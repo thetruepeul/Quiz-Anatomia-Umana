@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Vero/Falso – Anatomia Umana</title>
+
+  <!-- Foglio di stile esterno -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="quiz-container">
+    <h1 class="title">Quiz Vero / Falso</h1>
+
+    <!-- Contatore domanda -->
+    <div id="counter" class="counter">Domanda 1 / 100</div>
+
+    <!-- Affermazione -->
+    <p id="statement" class="statement"></p>
+
+    <!-- Pulsanti di risposta -->
+    <div class="btn-group">
+      <button id="trueBtn"  class="answer-btn">Vero</button>
+      <button id="falseBtn" class="answer-btn">Falso</button>
+    </div>
+
+    <!-- Feedback istantaneo -->
+    <div id="feedback" class="feedback"></div>
+
+    <!-- Navigazione -->
+    <button id="nextBtn" class="next-btn" disabled>Prossima domanda</button>
+
+    <!-- Riepilogo finale (nascosto finché serve) -->
+    <div id="summary" class="summary hidden"></div>
+  </main>
+
+  <!-- Logica del quiz -->
+  <script src="script.js"></script>
+</body>
+</html>
